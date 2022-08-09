@@ -42,17 +42,17 @@ export default function OnBoard() {
                     </div>
 
                     <div className='mt-24'>
-                        {(step == 1 ?
+                        {(step === 1 ?
                             <div>
                                 <Step1 step={step} setStep={setStep} />
                             </div>
                             :
-                            (step == 2 ?
+                            (step === 2 ?
                                 <div>
                                     <Step2 step={step} setStep={setStep} />
                                 </div>
                                 :
-                                (step == 3 ?
+                                (step === 3 ?
                                     <Step3 step={step} setStep={setStep} />
                                     :
                                     <Step4 step={step} setStep={setStep} />
